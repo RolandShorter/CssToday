@@ -1,5 +1,62 @@
+/* 
+CSS class for styling input elements
+*/
+
+/* Set margin for all input elements */
 input {
-    margin: .25rem;
+  margin: .25rem;
+}
+
+/* Base style for input elements */
+.input {
+  border: 1px solid #AAA;
+  outline: none;
+  font-size: inherit;
+  padding: .5em;
+  border-radius: .2em;
+}
+
+/* Style for focused input elements */
+.input:focus {
+  border-color: #0AF;
+  box-shadow: 0 0 5px 0 #0AF;
+}
+
+/* Style for input elements with success state */
+.input.input-success {
+  border-color: #27AE60;
+}
+
+/* Style for focused input elements with success state */
+.input.input-success:focus {
+  border-color: #0F0;
+  box-shadow: 0 0 5px 0 #0F0;
+}
+
+/* Style for input elements with error state */
+.input.input-error {
+  border-color: #EB5757;
+}
+
+/* Style for focused input elements with error state */
+.input.input-error:focus {
+  border-color: #F00;
+  box-shadow: 0 0 5px 0 #F00;
+}
+
+/* Style for large input elements */
+.input.input-large {
+  font-size: 1.25rem;
+}
+
+/* Style for small input elements */
+.input.input-small {
+  font-size: .75rem;
+}
+
+/* Style for disabled input elements */
+.input:disabled {
+  background-color: #EAEAEA;
 }
 
 .input {
